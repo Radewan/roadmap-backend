@@ -1,0 +1,22 @@
+{
+  "name": "task-tracer",
+  "version": "1.0.0",
+  "description": "Task Tracer",
+  "keywords": [
+    "l"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "l"
+  },
+  "license": "ISC",
+  "author": "radewan",
+  "type": "commonjs",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

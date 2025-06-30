@@ -1,0 +1,23 @@
+{
+  "name": "blogging-platform-api",
+  "version": "1.0.0",
+  "description": "api",
+  "keywords": [
+    "a"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "l"
+  },
+  "license": "ISC",
+  "author": "radewan",
+  "type": "commonjs",
+  "main": "dist/index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "prisma": "^6.10.1",
+    "typescript": "^5.8.3"
+  }
+}
