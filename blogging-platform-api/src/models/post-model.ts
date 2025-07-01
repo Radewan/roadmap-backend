@@ -34,3 +34,17 @@ export const toPostResponse = (
     updateAt: post.updatedAt,
   };
 };
+
+export const toPostResponseArray = (
+  posts: (Post & { category: Category; tags: Tag[] })[]
+): PostResponse[] => {
+  return posts.map((post) => ({
+    id: post.id,
+    title: post.title,
+    content: post.content,
+    category: post.category.title,
+    tags: post.tags.map((tag) => tag.title),
+    createAt: post.createdAt,
+    updateAt: post.updatedAt,
+  }));
+};
