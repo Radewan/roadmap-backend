@@ -7,4 +7,6 @@ export const privateRouter = express.Router();
 privateRouter.use(authMiddleware);
 
 privateRouter.post("/todos", TodoController.create);
-// privateRouter.put("/todos?:todoId", TodoController.update);
+privateRouter.put("/todos/:todoId", TodoController.update);
+privateRouter.delete("/todos/:todoId", TodoController.delete);
+privateRouter.get("/todos", TodoController.get)
