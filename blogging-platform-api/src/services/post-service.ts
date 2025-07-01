@@ -12,7 +12,7 @@ import { Validation } from "../validations/validation";
 
 export class PostService {
   static async create(postRequest: PostRequest) {
-    const request = Validation.validate(PostValidation.CREATE, postRequest);
+    const request = Validation.validate(PostValidation.create, postRequest);
 
     let category = await prismaClient.category.findFirst({
       where: {
@@ -67,7 +67,7 @@ export class PostService {
     return toPostResponse(post);
   }
   static async put(postRequest: PostRequest, postId: number) {
-    const request = Validation.validate(PostValidation.CREATE, postRequest);
+    const request = Validation.validate(PostValidation.create, postRequest);
 
     let category = await prismaClient.category.findFirst({
       where: {
